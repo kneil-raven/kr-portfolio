@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import { navItems, personalInfo } from '../../data/navigation';
-import { ThemeToggle } from '../common/ThemeToggle';
+import ThemeToggle from '../../common/ThemeToggle/ThemeToggle.jsx';
 import Navigation from './Navigation';
 import MobileMenu from './MobileMenu';
 
