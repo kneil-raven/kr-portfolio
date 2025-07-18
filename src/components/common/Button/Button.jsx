@@ -15,7 +15,7 @@ const Button = ({
     const baseClasses = 'font-semibold transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled-cursor-not-allowed disabled:hover:scale-100';
 
     const variants = {
-        primary: 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white',
+        primary: 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white transition-all duration-300 transform hover:scale-105',
         outline: `border-2 ${isDarkMode
             ? 'border-white/30 hover:border-white/50 hover:bg-white/10'
             : 'border-black/30 hover:border-black/50 hover:bg-white/10'

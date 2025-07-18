@@ -10,13 +10,16 @@ export const navItems = [
 
 export const personalInfo = {
     name: 'Kneil Raven',
-    title: 'Tech Enthusiast',
+    title: 'Tech Enthusiast | Lifelong Learner',
     email: 'email.1@example.com',
     github: 'github.com/sampleonly',
     linkedin: 'linkedin.com/sample',
-    description: 'Building innovative solutions with modern technologies.',
+    description: 'Building clean code and purposeful interfaces — one component at a time.',
     about: {
         intro: "I'm a passionate tech enthusiast with over 2 years of experience in Telecommunications industry, IT industry.",
         experience: "My journey spans from working in Telecommunications outside plant operations, Free Wi-Fi, to processing Digital Certificates of the Philippine National PKI. "
     }
-}
+};
+
+// alternative for description
+// description: Building clean code and purposeful interfaces — one component at a time.

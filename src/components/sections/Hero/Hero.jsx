@@ -17,11 +17,11 @@ const Hero = () => {
 
                     {/* Avatar */}
                     <div className='mb-8'>
-                        <div className='w-32'>
-                            <div className={`w-full h-full rounded-full ${
+                        <div className='w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 transition-all duration-300'>
+                            <div className={`w-full h-full rounded-full flex items-center justify-center transition-all duration-300 ${
                                 isDarkMode ? 'bg-slate-800' : 'bg-white'
                             }`}>
-                                <span>
+                                <span className='text-4xl font-bold'>
                                     {personalInfo.name.split(' ').map(n => n[0]).join('')}
                                 </span>
                             </div>
@@ -29,21 +29,21 @@ const Hero = () => {
                     </div>
                     
                     {/* Title */}
-                    <h1>
-                        <span>
+                    <h1 className='text-4xl md:text-5xl font-bold'>
+                        <span className='bg-gradient-to-r from-blue-500 via-purple-400 to-pink-400 bg-clip-text text-transparent'>
                             {personalInfo.title}
                         </span>
                     </h1>
 
                     {/* Description */}
-                    <p className={`text-xl md:text-2xl ${
+                    <p className={`mt-4 text-xl md:text-2xl mb-8 max-w-3xl mx-auto transition-colors duration-300 ${
                         themeClasses.text.secondary
                     }`}>
                         {personalInfo.description}
                     </p>
 
                     {/* CTA Buttons */}
-                    <div>
+                    <div className='flex flex-col sm:flex-row gap-4 justify-center'>
                         <Button
                             onClick={() => scrollToSection('projects')}
                             variant='primary'
