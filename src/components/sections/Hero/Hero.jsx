@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { personalInfo } from  '../../data/navigation';
 import { scrollToSection } from '../../utils/helpers';
-import { Button } from '../common/Button';
+import { Button } from '../../common/Button';
 
 const Hero = () => {
     const { themeClasses, isVisible, isDarkMode } = useTheme();

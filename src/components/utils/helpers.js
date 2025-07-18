@@ -30,13 +30,13 @@ export const debounce = (func, wait) => {
 // Throttle function
 export const throttle = (func, limit) => {
     let inThrottle;
-    return func(...args) {
+    return function(...args) {
         if (!inThrottle) {
             func.apply(this, args);
             inThrottle = true;
             setTimeout(() => inThrottle = false, limit);
         }
-    };
+    }
 };
 
 

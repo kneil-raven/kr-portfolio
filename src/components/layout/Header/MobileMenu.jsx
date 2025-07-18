@@ -2,12 +2,12 @@ import React from "react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { scrollToSection } from "../../utils/helpers";
 
-const MobileMenu = () => {
+const MobileMenu = ({ isOpen, onItemClick, items }) => {
   const { themeClasses, isDarkMode } = useTheme();
 
   const handleItemClick = (sectionId) => {
     scrollToSection(sectionId);
-    onItemClick();
+    onItemClick?.();
   };
 
   if (!isOpen) return null;
