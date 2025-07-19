@@ -36,7 +36,7 @@ const Hero = () => {
                     </h1>
 
                     {/* Description */}
-                    <p className={`mt-4 text-xl md:text-2xl mb-8 max-w-3xl mx-auto transition-colors duration-300 ${
+                    <p className={`mt-3 text-xl md:text-2xl mb-8 max-w-3xl mx-auto transition-colors duration-300 ${
                         themeClasses.text.secondary
                     }`}>
                         {personalInfo.description}

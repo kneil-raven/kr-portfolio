@@ -1,7 +1,10 @@
-// File: src/components/sections/Skills/Skills.jsx
 import React from 'react';
+import { useTheme } from '../../contexts/ThemeContext';
+import technicalSkills from '../../data/skills';
 
-const Skills = ({ skills = [], isDarkMode }) => {
+const Skills = ({ skills = [] }) => {
+  const { isDarkMode } = useTheme();
+
   return (
     <section
       id="skills"
@@ -15,7 +18,7 @@ const Skills = ({ skills = [], isDarkMode }) => {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skills.map((group, index) => (
+          {technicalSkills.map((group, index) => (
             <div
               key={index}
               className={`rounded-xl p-6 border backdrop-blur-sm transition-all duration-300 ${

@@ -1,8 +1,12 @@
 // File: src/components/sections/Projects/Projects.jsx
 import React from 'react';
 import { GithubIcon, ExternalLink, Code } from 'lucide-react';
+import projectsData from '../../data/projectsData';
+import { useTheme } from '../../contexts/ThemeContext';
 
-const Projects = ({ projects = [], isDarkMode }) => {
+const Projects = ({ projects = [] }) => {
+  const { isDarkMode } = useTheme();
+
   return (
     <section id="projects" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -11,7 +15,7 @@ const Projects = ({ projects = [], isDarkMode }) => {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projectsData.map((project, index) => (
             <div
               key={index}
               className={`rounded-xl overflow-hidden transition-all duration-300 border backdrop-blur-sm hover:scale-105 ${
