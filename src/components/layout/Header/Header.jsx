@@ -19,10 +19,10 @@ const Header = () => {
     <nav
       className={`fixed top-0 w-full z-50 backdrop-blur-lg border-b transition-all duration-300 ${themeClasses.card}  ${themeClasses.border}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-8">
+        <div className="flex justify-between items-center md:py-3 py-4">
           {/* Logo */}
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
             {personalInfo.name}
           </div>
 

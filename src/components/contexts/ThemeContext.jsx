@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const ThemeContext = createContext();
 
@@ -27,7 +27,7 @@ export const ThemeProvider = ({ children }) => {
             ? 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white'
             : 'bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 text-gray-900',
         section: isDarkMode ? 'bg-black/20' : 'bg-white-20',
-        card: isDarkMode ? 'bg-white/5 border-white/10' : 'bg-black/5 border-black/10',
+        card: isDarkMode ? 'bg-white/10 border-white/10' : 'bg-black/5 border-black/10',
         text: {
             primary: isDarkMode ? 'text-white' : 'text-gray-900',
             secondary: isDarkMode ? 'text-gray-300' : 'text-gray-600',

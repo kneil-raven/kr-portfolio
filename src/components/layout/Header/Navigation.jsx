@@ -1,4 +1,3 @@
-import React from "react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { scrollToSection } from "../../utils/helpers";
 
@@ -16,7 +15,7 @@ const Navigation = ({ items, activeSection, onItemClick }) => {
         <button
           key={item.id}
           onClick={() => handleItemClick(item.id)}
-          className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 ${
+          className={`flex items-center space-x-2 px-2 py-2 rounded-lg transition-all duration-300 ${
             themeClasses.hover.bg
           } ${
             activeSection === item.id
